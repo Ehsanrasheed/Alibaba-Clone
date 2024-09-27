@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alibaba.com</title>
+    <!-- <link rel="stylesheet" href="https://www.alibaba.com/favicon.ico"> -->
     <style>
         body{
             background-color: #f0f0f0;
@@ -115,9 +116,10 @@
             margin: 0px 20px;
             background-color: white;
             padding: 10px;
+            display: grid;
         }
         div > form {
-            display: grid;
+            
         }
         div > form > span{
             margin: 10px;
@@ -141,7 +143,7 @@
         #videocontainer{
             width: 300px;
             height: 100%;
-           
+            overflow: hidden;
         }
         #contentlayout{
             width: 730px;
@@ -293,7 +295,7 @@
     <div id="layout">
         <div id="layout1">
         <div id="videocontainer">
-        <video style=" height: 100%;width: 100% ; border-radius: 15px;" src="https://play.video.alibaba.com/global/play/446738418579.mp4" controls></video>
+        <video style=" height: 100% ;width: 100% ; border-radius: 15px; object-fit: cover;" src="https://play.video.alibaba.com/global/play/446738418579.mp4" controls autoplay muted></video>
         </div>
         <div id="contentlayout">
             <div id="content1">
