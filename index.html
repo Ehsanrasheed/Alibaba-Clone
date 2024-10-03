@@ -1,91 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alibaba.com</title>
     <!-- <link rel="stylesheet" href="https://www.alibaba.com/favicon.ico"> -->
     <style>
-        body{
+        body {
             background-color: #f0f0f0;
             margin: 0;
             padding: 0;
             flex-wrap: wrap;
         }
-        *{
+
+        * {
             box-sizing: border-box;
         }
-        #index{
+
+        #index {
             background-color: white;
             width: 100%;
             height: 110px;
             margin-bottom: 50px;
         }
-        #index > div{
-            padding:0px 20px;
+
+        #index>div {
+            padding: 0px 20px;
             margin-top: 0px;
         }
-        #first{
+
+        #first {
             display: flex;
             margin-top: 0px;
             height: 70px;
-            margin-bottom: 5px; ;
+            margin-bottom: 5px;
+            /* position: fixed; */
+            background-color: white;
         }
-        h1{
-            font:  arial;
+
+        h1 {
+            font-family: arial;
             color: #f60;
         }
-        #logo{
+
+        #logo {
             display: flex;
         }
-        #Delivering{
+
+        #Delivering {
             display: grid;
             height: 30px;
         }
-        #first > input[type=text]{
-            height:40px;
+
+        #first>input[type=text] {
+            height: 40px;
             width: 500px;
             padding-left: 15px;
             border-radius: 30px;
             font-size: 17px;
             border: black solid 1px;
         }
-        #first > input[type=submit]{
+
+        #first>input[type=submit] {
             height: 40px;
             border-radius: 30px;
             width: 120px;
-            
+
             background-color: #f60;
             color: white;
             border: 0px;
             cursor: pointer;
         }
-        #first > input[type=submit]:hover{
+
+        #first>input[type=submit]:hover {
             background-color: #b44e05;
         }
-        #first > *{
+
+        #first>* {
             margin: auto;
         }
-        .two{
+
+        .two {
             display: flex;
         }
-        .two > *{
+
+        .two>* {
             align-content: center;
         }
-        #second{
+
+        #second {
             width: 100%;
             display: flex;
         }
-        #second span{
-        margin: 20px;
-        }
-        #secfir{
 
+        #second span {
+            margin: 20px;
         }
-        #secsec{
-        margin-left: auto;
+
+        #secsec {
+            margin-left: auto;
         }
-        #option{
+
+        #option {
             width: 50%;
             display: flex;
             padding-left: 15px;
@@ -94,146 +111,340 @@
             margin-bottom: 5px;
             font-size: 20px;
         }
-        #option > *{
+
+        #option>* {
             flex: content;
             cursor: pointer;
         }
-        #option > *:hover{
-            font-size:larger;
+
+        #option>*:hover {
+            font-size: larger;
             color: black;
         }
 
-        span{
+        span {
             color: #5c5b5b;
+            font-family: sans-serif;
         }
-        #filter{
+
+        #filter {
             width: 10%;
             margin: 0px;
-            
+
         }
-        div > form{
+
+        div>form {
             width: 88%;
             margin: 0px 20px;
             background-color: white;
-            padding: 10px;
+            padding: 5px;
             display: grid;
+            font-size: 13px;
         }
-        div > form {
-            
-        }
-        div > form > span{
+
+        div>form>span {
             margin: 10px;
         }
-        #content{
-            display:flex ;
+        #freespace{
+            height: 118vh;
         }
-        #layout{
-            
+
+        #content {
+            display: flex;
+        }
+
+        #layout {
+
             width: 2000px;
             margin: 0px 20px;
-            
+            display: grid;
         }
-        #layout1{
+
+        #layout1 {
             width: 100%;
             height: 350px;
             background-color: white;
             padding: 20px;
             display: flex;
         }
-        #videocontainer{
+
+        #videocontainer {
             width: 300px;
             height: 100%;
             overflow: hidden;
         }
-        #contentlayout{
+
+        #contentlayout {
             width: 730px;
             margin-left: 20px;
         }
-        #content1{
+
+        #content1 {
             height: 19%;
             display: flex;
         }
-        #co1d{
+
+        #co1d {
             margin: 0px 15px;
             display: grid;
         }
-        #content1 > input[type=submit]{
+
+        #content1>input[type=submit] {
             height: 37px;
             border-radius: 30px;
             width: 120px;
-            
+
             background-color: white;
             color: black;
             border: 1px solid black;
             cursor: pointer;
             margin-left: auto;
-            
+
         }
-        #content1 > input[type=submit]:hover{
+
+        #content1>input[type=submit]:hover {
             background-color: #f60;
             border: 0px;
             color: white;
         }
-        #content2{
+
+        #content2 {
             height: 81%;
             justify-content: space-evenly;
             display: flex;
         }
-        .cot2i{
+
+        .cot2i {
             width: 22%;
         }
-        .cot2i > img{
+
+        .cot2i>img {
             width: 150px;
             height: 150px;
         }
-        .cot2i > a{
+
+        .cot2i>a {
             color: #5c5b5b;
             text-decoration: none;
             cursor: pointer;
         }
-        .cot2i > a:hover{
+
+        .cot2i>a:hover {
             text-decoration: underline;
+        }
+
+        /* .boxcontent{
+            width: 100%;
+            height: 350px;
+            display: flex;
+            margin-top: 15px; 
+        } */
+        .boxcontent {
+            height: 450px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .boxcontent>div {
+            width: 23.5%;
+            background-color: white;
+            border-radius: 15px;
+            padding: 12px;
+        }
+
+        .boxcontent>div>span:first-child {
+            background-color: #f0f0f0;
+            width: 220px;
+            height: 220px;
+            display: inline-block;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 7px;
+        }
+
+        .picture {
+
+            border-radius: 12px;
+            height: 200px;
+
+        }
+
+        h3 {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+
+        .anchor {
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .anchor:hover {
+            color: red;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            margin: 25px 5px;
+            border-radius: 25px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            cursor: pointer;
+            border: black solid 1px;
+            font-weight: bold;
+        }
+
+        button:hover {
+            border: none;
+            background-color: #f60;
+            color: white;
+        }
+
+        footer {
+            height: 92vh;
+        }
+
+        #footer1 {
+            height: 65vh;
+            background-color: white;
+            margin-top: 2vh;
+            padding: 2vh;
+        }
+        .list{
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        ol {
+            list-style-type: none;
+        }
+        .list a{
+            text-decoration: none;
+            font-family:sans-serif ;
+            font-size: 13px;
+            /* text-align: center; */
+            text-decoration: none;
+            color: #5c5b5b;
+            cursor: pointer;
+        }
+        .list a:hover{
+            text-decoration: underline;
+        }
+        .list h3{
+            font-size:medium;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .list div{
+            width: 18%;
+        }
+        li{
+            margin: 20px;
+        }
+        .fimage{
+            display: flex;
+            margin: 20px;
+        }
+        .fi1 img{
+            width: 30px;
+            margin: 20px;
+        }
+        .fi2{
+            margin-left: auto;
+        }
+        .fi2 img{
+            width: 120px;
+            height: 40px;
+            margin: 10px;
+        }
+        .message{
+            background-color: white;
+            width: 180px;
+            height: 40px;
+            font-size: 20px;
+            padding: 5px 15px;
+            position: fixed;
+            bottom: 0px;
+            right:120px;
+        }
+        .message img{
+            width: 20px;
+            margin: 5px 5px;
+        }
+        #footer2{
+            padding: 35px;
+        }
+        .f2li{
+            display: flex;
+            justify-content: center;
+            color: #5c5b5b;
+        }
+        .f2li a{
+            text-decoration: none;
+            color: #5c5b5b;
+            cursor: pointer;
+            margin: 5px;
+            font-family:Verdana, Geneva, Tahoma, sans-serif;
+            font-size: small;
+        }
+        .f2li a:hover{
+            text-decoration: underline;
+        }
+        .f2l{
+            color: #5c5b5b;
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
     <div id="index">
         <div>
-        <div id="first">
-        <div id="logo">
-        <img width="60px" src="./Asset/Alibaba.webp" alt="Alibabalogo">
-        <h1>Alibaba.com</h1>
-        </div>
-        <input type="text" placeholder="What are you looking for?" >
-        <div id="Delivering">
-        <span >Deliver to:</span>
-        <span style="height: 50px;"><img width="20px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeFDlSfdkr6X308rDCLKG1L4PU7HU0o1DClw&s" alt="pakistan flag">PK</span>
-        </div>
-        <div class="two">
-        <span><img width="30px" src="https://png.pngtree.com/png-clipart/20190617/original/pngtree-globe-vector-icon-png-image_3876269.jpg" alt="world map icon"></span>
-        <span>English-usd</span>
-        </div>
-        <div class="two">
-        <span><img width="30px" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBZD7xwn7w38-Ez2MTmIMU3fZo_cXRmlE7pNREZVtFFHdw4PkdWQfEQCyhKDzXnez5v1k&usqp=CAU" alt="sign in icon"></span>
-        <span>Sign in</span>
-        </div>
-        <input type="submit" value="Signup">
-        </div>
-        <div id="second">
-            <div id="secfir">
-            <span>All categories</span>
-            <span>Featured collection</span>
-            <span>Trade assurance</span>
+            <div id="first">
+                <div id="logo">
+                    <img width="60px" src="./Asset/Alibaba.webp" alt="Alibabalogo">
+                    <h1>Alibaba.com</h1>
+                </div>
+                <input type="text" placeholder="What are you looking for?">
+                <div id="Delivering">
+                    <span>Deliver to:</span>
+                    <span style="height: 50px;"><img width="20px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeFDlSfdkr6X308rDCLKG1L4PU7HU0o1DClw&s"
+                            alt="pakistan flag">PK</span>
+                </div>
+                <div class="two">
+                    <span><img width="30px"
+                            src="https://png.pngtree.com/png-clipart/20190617/original/pngtree-globe-vector-icon-png-image_3876269.jpg"
+                            alt="world map icon"></span>
+                    <span>English-usd</span>
+                </div>
+                <div class="two">
+                    <span><img width="30px"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBZD7xwn7w38-Ez2MTmIMU3fZo_cXRmlE7pNREZVtFFHdw4PkdWQfEQCyhKDzXnez5v1k&usqp=CAU"
+                            alt="sign in icon"></span>
+                    <span>Sign in</span>
+                </div>
+                <input type="submit" value="Signup">
             </div>
-            <div id="secsec">
-            <span>Buyer Central</span>
-            <span>Help conter</span>
-            <span>Get the app</span>
-            <span>Become a supplier</span>
+            <div id="second">
+                <div id="secfir">
+                    <span>All categories</span>
+                    <span>Featured collection</span>
+                    <span>Trade assurance</span>
+                </div>
+                <div id="secsec">
+                    <span>Buyer Central</span>
+                    <span>Help conter</span>
+                    <span>Get the app</span>
+                    <span>Become a supplier</span>
+                </div>
             </div>
         </div>
     </div>
-    </div>
+    <div class="message"><img src="https://img.alicdn.com/tfs/TB1rop4B9f2gK0jSZFPXXXsopXa-54-48.png" alt="">Messenger</div>
     <div id="option">
         <span>Products</span>
         <span>All suppliers</span>
@@ -241,98 +452,325 @@
         <span>Regional supplies</span>
     </div>
     <div id="content">
-    <div id="Filters">
-        <form action="filter">
-            <h2>Filters</h2>
-            <span>
-            <input type="checkbox">
-            <img style="width: 39px;" src="https://s.alicdn.com/@img/imgextra/i3/O1CN01mNvQKY1RJj97MXN6x_!!6000000002091-2-tps-207-84.png" alt="super img">
-            <label for="">Super september</label>
-            </span>
-            <span>
-            <input type="checkbox">
-            <img style="width: 39px;" src="https://s.alicdn.com/@img/imgextra/i3/O1CN01mNvQKY1RJj97MXN6x_!!6000000002091-2-tps-207-84.png" alt="super img">
-            <label for="">180-days lowest price</label>
-            </span>
-            <span>
-            <input type="checkbox">
-            <img style="width: 39px;" src="https://img.alicdn.com/imgextra/i2/O1CN01H3uEkI1ByudKesBr1_!!6000000000015-2-tps-108-48.png" alt="new img">
-            <label for="">New</label>
-            <img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01vidBYV1pVDndQFjwI_!!6000000005365-55-tps-17-16.svg" alt="question mark sign">
-            </span>
-            <span>
-            <input type="checkbox">
-            <img style="width: 110px;" src="https://s.alicdn.com/@img/imgextra/i2/O1CN01d18R1Z1H1GuiHHzpS_!!6000000000697-55-tps-212-32.svg" alt="">
-            <label style="font-size: 12px; padding-left: 23px;" for="">Protects your orders on Alibaba.com</label>
-            
-            </span>
-            <h3>Supplier Features</h3>
-            <span>
-                <input type="checkbox">
-                <img style="width: 45px;" src="https://s.alicdn.com/@img/imgextra/i2/O1CN01RTQpCr1aufaXTtWv5_!!6000000003390-2-tps-83-32.png?webp=close" alt="">
-                <label for="">Supplier</label>
-                <img  src="https://s.alicdn.com/@img/imgextra/i4/O1CN01vidBYV1pVDndQFjwI_!!6000000005365-55-tps-17-16.svg" alt="">
-            </span>
-            <span>
-                <input type="checkbox">
-                
-                <img style="width: 59px;" src="https://s.alicdn.com/@img/imgextra/i4/O1CN017JpSfh1MBsEOBrKwl_!!6000000001397-2-tps-135-32.png?webp=close" alt="">
-                <label for="Supplier">Supplier</label>
-                <img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01vidBYV1pVDndQFjwI_!!6000000005365-55-tps-17-16.svg" alt="">
-            </span>
-            <span>
-                <input type="checkbox">
-                <label for="Supplier">1h response time</label>
-                
-            </span>
-            <h3>Merge result <img style="width: 30px;" src="https://s.alicdn.com/@img/imgextra/i4/O1CN018HNRIu1V0GjlgwCry_!!6000000002590-2-tps-72-48.png?webp=close" alt=""></h3>
-            <span>
-                <input type="checkbox">
-                <label for="">Merge by supplier</label>
-            </span>
-        </form>
-    </div>
-    <div id="layout">
-        <div id="layout1">
-        <div id="videocontainer">
-        <video style=" height: 100% ;width: 100% ; border-radius: 15px; object-fit: cover;" src="https://play.video.alibaba.com/global/play/446738418579.mp4" controls autoplay muted></video>
+        <div id="Filters">
+            <form action="filter">
+                <h2>Filters</h2>
+                <span>
+                    <input type="checkbox">
+                    <img style="width: 39px;"
+                        src="https://s.alicdn.com/@img/imgextra/i3/O1CN01mNvQKY1RJj97MXN6x_!!6000000002091-2-tps-207-84.png"
+                        alt="super img">
+                    <label for="">Super september</label>
+                </span>
+                <span>
+                    <input type="checkbox">
+                    <img style="width: 39px;"
+                        src="https://s.alicdn.com/@img/imgextra/i3/O1CN01mNvQKY1RJj97MXN6x_!!6000000002091-2-tps-207-84.png"
+                        alt="super img">
+                    <label for="">180-days lowest price</label>
+                </span>
+                <span>
+                    <input type="checkbox">
+                    <img style="width: 39px;"
+                        src="https://img.alicdn.com/imgextra/i2/O1CN01H3uEkI1ByudKesBr1_!!6000000000015-2-tps-108-48.png"
+                        alt="new img">
+                    <label for="">New</label>
+                    <img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01vidBYV1pVDndQFjwI_!!6000000005365-55-tps-17-16.svg"
+                        alt="question mark sign">
+                </span>
+                <span>
+                    <input type="checkbox">
+                    <img style="width: 110px;"
+                        src="https://s.alicdn.com/@img/imgextra/i2/O1CN01d18R1Z1H1GuiHHzpS_!!6000000000697-55-tps-212-32.svg"
+                        alt="">
+                    <label style="font-size: 12px; padding-left: 23px;" for="">Protects your orders on
+                        Alibaba.com</label>
+
+                </span>
+                <h3>Supplier Features</h3>
+                <span>
+                    <input type="checkbox">
+                    <img style="width: 45px;"
+                        src="https://s.alicdn.com/@img/imgextra/i2/O1CN01RTQpCr1aufaXTtWv5_!!6000000003390-2-tps-83-32.png?webp=close"
+                        alt="">
+                    <label for="">Supplier</label>
+                    <img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01vidBYV1pVDndQFjwI_!!6000000005365-55-tps-17-16.svg"
+                        alt="">
+                </span>
+                <span>
+                    <input type="checkbox">
+
+                    <img style="width: 59px;"
+                        src="https://s.alicdn.com/@img/imgextra/i4/O1CN017JpSfh1MBsEOBrKwl_!!6000000001397-2-tps-135-32.png?webp=close"
+                        alt="">
+                    <label for="Supplier">Supplier</label>
+                    <img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01vidBYV1pVDndQFjwI_!!6000000005365-55-tps-17-16.svg"
+                        alt="">
+                </span>
+                <span>
+                    <input type="checkbox">
+                    <label for="Supplier">1h response time</label>
+
+                </span>
+                <h3>Merge result <img style="width: 30px;"
+                        src="https://s.alicdn.com/@img/imgextra/i4/O1CN018HNRIu1V0GjlgwCry_!!6000000002590-2-tps-72-48.png?webp=close"
+                        alt=""></h3>
+                <span>
+                    <input type="checkbox">
+                    <label for="">Merge by supplier</label>
+                </span>
+                <span id="freespace">
+
+                </span>
+            </form>
         </div>
-        <div id="contentlayout">
-            <div id="content1">
-                <img style="width: 48px; height: 48px;" src="https://s.alicdn.com/@sc04/kf/HTB1mA5fbh_rK1RkHFqD761JAFXad.png_100x100.png" alt="">
-                <div id="co1d">
-                    <span style="font-size: 19px; color: black;">Shenzhen Hopestar Sci-Tech Co., Ltd.</span>
-                    <span> <img style="height: 16px;" src="https://s.alicdn.com/@img/imgextra/i2/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png_q60.jpg" alt=""> Consumer Electronics</span>
+        <div id="layout">
+            <div id="layout1">
+                <div id="videocontainer">
+                    <video style=" height: 100% ;width: 100% ; border-radius: 15px; object-fit: cover;"
+                        src="https://play.video.alibaba.com/global/play/446738418579.mp4" controls autoplay
+                        muted></video>
                 </div>
-                <input type="submit" value="Chat now">
-                <input type="submit" value="Contact supplier">
+                <div id="contentlayout">
+                    <div id="content1">
+                        <img style="width: 48px; height: 48px;"
+                            src="https://s.alicdn.com/@sc04/kf/HTB1mA5fbh_rK1RkHFqD761JAFXad.png_100x100.png" alt="">
+                        <div id="co1d">
+                            <span style="font-size: 19px; color: black;">Shenzhen Hopestar Sci-Tech Co., Ltd.</span>
+                            <span> <img style="height: 16px;"
+                                    src="https://s.alicdn.com/@img/imgextra/i2/O1CN01YDryn81prCbNwab4Q_!!6000000005413-2-tps-168-42.png_q60.jpg"
+                                    alt=""> Consumer Electronics</span>
+                        </div>
+                        <input type="submit" value="Chat now">
+                        <input type="submit" value="Contact supplier">
+                    </div>
+                    <div id="content2">
+                        <div class="cot2i">
+                            <img src="https://s.alicdn.com/@sc04/kf/H726f1b8c63774f7fb8830eb1aa69e757L.jpg_300x300.jpg"
+                                alt="">
+                            <a href="">Brand New Laptop 15.6 Inch Portable Cheap</a>
+                            <h3>US$200.00 - US$</h3>
+                        </div>
+                        <div class="cot2i">
+                            <img src="https://s.alicdn.com/@sc04/kf/H9c67942e0c4e4d2290b0f12caa60470eh.jpg_300x300.jpg"
+                                alt="">
+                            <a href="">Brand New Laptop 15.6 Inch Portable Cheap</a>
+                            <h3>US$250.00 - US$</h3>
+                        </div>
+                        <div class="cot2i">
+                            <img src="https://s.alicdn.com/@sc04/kf/H9d91b11713ed44cd9dedbd2651bbbce7i.jpg_300x300.jpg"
+                                alt="">
+                            <a href="">Brand New Laptop 15.6 Inch Portable Cheap</a>
+                            <h3>US$250.00 - US</h3>
+                        </div>
+                        <div class="cot2i">
+                            <img src="https://s.alicdn.com/@sc04/kf/H9182b6c01db749b59f28ff6e44ec9e2aj.jpg_300x300.jpg"
+                                alt="">
+                            <a href="">Brand New Laptop 15.6 Inch Portable Cheap</a>
+                            <h3>US$253.00 - US$</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="content2">
-                <div class="cot2i" >
-                    <img src="https://s.alicdn.com/@sc04/kf/H726f1b8c63774f7fb8830eb1aa69e757L.jpg_300x300.jpg" alt="">
-                    <a href="">Brand New Laptop 15.6 Inch Portable Cheap</a>
-                    <h3>US$200.00 - US$</h3>
+            <div class="boxcontent">
+                <div>
+                    <span>
+                        <img class="picture"
+                            src="https://s.alicdn.com/@sc04/kf/Hc8d21612ea5f442a8207a772f358be71o.jpg_720x720q50.jpg"
+                            alt="">
+                    </span>
+                    <a class="anchor" href="">14 inch Win 11 brand new notebook N3350 2.4Ghz</a>
+                    <h3>US$103.00</h3>
+                    <span>Min. order: 1 piece <br>3,768 sold</span>
+                    <br>
+                    <button>Add Cart</button>
+                    <button>Chat Now</button>
+
                 </div>
-                <div class="cot2i" >
-                    <img src="https://s.alicdn.com/@sc04/kf/H9c67942e0c4e4d2290b0f12caa60470eh.jpg_300x300.jpg" alt="">
-                    <a href="">Brand New Laptop 15.6 Inch Portable Cheap</a>
-                    <h3>US$250.00 - US$</h3>
+                <div>
+                    <span>
+                        <img class="picture"
+                            src="https://s.alicdn.com/@sc04/kf/Ha2b0c5899eb54a5e9ad53e00f0559886o.jpg_720x720q50.jpg"
+                            alt="">
+                    </span>
+                    <a class="anchor" href="">14 inch Win 11 brand new notebook N3350 2.4Ghz DDR3</a>
+                    <h3>US$200.00 </h3>
+                    <span>Min. order: 1 piece <br>2,546 sold</span>
+                    <br>
+                    <button>Add Cart</button>
+                    <button>Chat Now</button>
                 </div>
-                <div class="cot2i" >
-                    <img src="https://s.alicdn.com/@sc04/kf/H9d91b11713ed44cd9dedbd2651bbbce7i.jpg_300x300.jpg" alt="">
-                    <a href="">Brand New Laptop 15.6 Inch Portable Cheap</a>
-                    <h3>US$250.00 - US</h3>
+                <div>
+                    <span>
+                        <img class="picture"
+                            src="https://s.alicdn.com/@sc04/kf/Hf665f500311e4b119a1b7ca680e6f156x.jpg_720x720q50.jpg"
+                            alt="">
+                    </span>
+                    <a class="anchor" href="">New Laptop Computer 1920*1080 Laptops Cheap</a>
+                    <h3>US$200.00 </h3>
+                    <span>Min. order: 1 piece <br>1,390 sold</span>
+                    <br>
+                    <button>Add Cart</button>
+                    <button>Chat Now</button>
                 </div>
-                <div class="cot2i" >
-                    <img src="https://s.alicdn.com/@sc04/kf/H9182b6c01db749b59f28ff6e44ec9e2aj.jpg_300x300.jpg" alt="">
-                    <a href="">Brand New Laptop 15.6 Inch Portable Cheap</a>
-                    <h3>US$253.00 - US$</h3>
+                <div>
+                    <span>
+                        <img class="picture"
+                            src="https://s.alicdn.com/@sc04/kf/Ha9f611ff58964b0daab3cea106547f9at.png_720x720q50.jpg"
+                            alt="">
+                    </span>
+                    <a class="anchor" href="">Original wholesale used laptop T410 Core i5 4G 320G HDD</a>
+                    <h3>US$200.00 </h3>
+                    <span>Min. order: 1 piece <br>1,257 sold</span>
+                    <br>
+                    <button>Add Cart</button>
+                    <button>Chat Now</button>
                 </div>
             </div>
 
-        </div>
+            <!-- adding new box -->
+            <div class="boxcontent">
+                <div>
+                    <span>
+                        <img class="picture"
+                            src="https://s.alicdn.com/@sc04/kf/H84645481f8b64cf49cdff058383a4b5ct.jpg_720x720q50.jpg"
+                            alt="">
+                    </span>
+                    <a class="anchor" href="">14 inch Win 11 brand new notebook N3350 2.4Ghz</a>
+                    <h3>US$103.00</h3>
+                    <span>Min. order: 1 piece <br>3,768 sold</span>
+                    <br>
+                    <button>Add Cart</button>
+                    <button>Chat Now</button>
+
+                </div>
+                <div>
+                    <span>
+                        <img class="picture"
+                            src="https://s.alicdn.com/@sc04/kf/Hb97f70edb5f34fc5b29093ab5bfc6aa3I.jpg_720x720q50.jpg"
+                            alt="">
+                    </span>
+                    <a class="anchor" href="">14 inch Win 11 brand new notebook N3350 2.4Ghz DDR3</a>
+                    <h3>US$200.00 </h3>
+                    <span>Min. order: 1 piece <br>2,546 sold</span>
+                    <br>
+                    <button>Add Cart</button>
+                    <button>Chat Now</button>
+                </div>
+                <div>
+                    <span>
+                        <img class="picture"
+                            src="https://s.alicdn.com/@sc04/kf/H245e649a0de64342a4c03622145f0e1dn.jpg_720x720q50.jpg"
+                            alt="">
+                    </span>
+                    <a class="anchor" href="">New Laptop Computer 1920*1080 Laptops Cheap</a>
+                    <h3>US$200.00 </h3>
+                    <span>Min. order: 1 piece <br>1,390 sold</span>
+                    <br>
+                    <button>Add Cart</button>
+                    <button>Chat Now</button>
+                </div>
+                <div>
+                    <span>
+                        <img class="picture"
+                            src="https://s.alicdn.com/@sc04/kf/H77c18e9f2d9745de9abe3b193bbdbf5cX.jpg_720x720q50.jpg"
+                            alt="">
+                    </span>
+                    <a class="anchor" href="">Original wholesale used laptop T410 Core i5 4G 320G HDD</a>
+                    <h3>US$200.00 </h3>
+                    <span>Min. order: 1 piece <br>1,257 sold</span>
+                    <br>
+                    <button>Add Cart</button>
+                    <button>Chat Now</button>
+                </div>
+            </div>
+            <!-- end -->
         </div>
     </div>
-    </div>
+    <footer>
+        <div id="footer1">
+            <div class="list">
+            <div>
+                <h3>Get support</h3>
+                <ol>
+                    <li><a href="">Help Center
+                        </a></li>
+                    <li><a href="">Live chat
+                        </a></li>
+                    <li><a href="">Check order status
+                        </a></li>
+                    <li><a href=""> Refunds
+                        </a></li>
+                    <li><a href="">Report abuse</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Trade Assurance</h3>
+                <ol>
+                    <li><a href="">Safe and easy payments</a></li>
+                    <li><a href="">Money-back policy</a></li>
+                    <li><a href="">On-time shipping</a></li>
+                    <li><a href="">After-sales protections</a></li>
+                    <li><a href="">Product monitoring services</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Source on Alibaba.com</h3>
+                <ol>
+                    <li><a href="">Request for Quotation</a></li>
+                    <li><a href="">Membership program</a></li>
+                    <li><a href="">Alibaba.com Logistics</a></li>
+                    <li><a href="">Sales tax and VAT</a></li>
+                    <li><a href="">Alibaba.com Reads</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Sell on Alibaba.com</h3>
+                <ol>
+                    <li><a href="">Start selling</a></li>
+                    <li><a href="">Seller Central</a></li>
+                    <li><a href="">Become a Verified Supplier</a></li>
+                    <li><a href="">Partnerships</a></li>
+                    <li><a href="">Download the app for suppliers</a></li>
+                </ol>
+            </div>
+            <div>
+                <h3>Get to know us</h3>
+                <ol>
+                    <li><a href="">Download the app for suppliers</a></li>
+                    <li><a href="">Corporate responsibility
+                    </a></li>
+                    <li><a href="">News center</a></li>
+                    <li><a href="">Careers</a></li>
+                </ol>
+            </div>
+        </div>
+        <div class="fimage">
+            <div class="fi1">
+                <img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01s7Kv0o1f2EXBWZFH3_!!6000000003948-2-tps-84-84.png" alt=""><img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01pokjTE1pWawtK9vr1_!!6000000005368-2-tps-84-84.png" alt=""><img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01FX2glN20tSUpYMinl_!!6000000006907-2-tps-84-84.png" alt=""><img src="https://s.alicdn.com/@img/imgextra/i1/O1CN01BdrubJ21eAtYdzBJF_!!6000000007009-2-tps-84-84.png" alt=""><img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01dPyTY31vW2A2bd0uC_!!6000000006179-2-tps-84-84.png" alt=""><img src="https://s.alicdn.com/@img/imgextra/i3/O1CN01JzRJnr28MxJY1e18t_!!6000000007919-2-tps-84-84.png" alt="">
+            </div>
+            <div class="fi2">
+                <img src="https://s.alicdn.com/@img/imgextra/i4/O1CN01i9Aj641atkjJJ9I6y_!!6000000003388-2-tps-396-132.png" alt=""><img src="https://s.alicdn.com/@img/imgextra/i4/O1CN018KnDNq1JleFgkjLRq_!!6000000001069-2-tps-447-132.png" alt="">
+            </div>
+        </div>
+        </div>
+        <div id="footer2">
+            <div class="f2li">
+                <a href="">AliExpress</a>|<a href="">1688.com</a>|<a href="">Tmall Taobao World</a>|<a href="">Alipay</a>|<a href="">Taobao Global</a>|<a href="">Lazada</a>
+            </div>
+            <div class="f2li">
+                <a href="">Legal Notice</a>.<a href="">Product Listing Policy</a>.<a href="">Terms of Use
+                </a>.<a href="">Intellectual Property Protection</a>.<a href="">Privacy Policy
+                </a>.<a href="">Terms of Use
+                </a>.<a href="">ntegrity Compliance</a>
+            </div>
+            <div class="f2l">
+                © 1999-2024 Alibaba.com。版权所有：杭州阿里巴巴海外信息技术有限公司 浙公网安备33010002000366 浙ICP备20240675
+            </div>
+            <div></div>
+        </div>
+    </footer>
+    
 </body>
+
 </html>
